@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gia Phả Họ Nguyễn</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-slate-100">
+<div class="flex h-screen overflow-hidden">
+
+  <aside class="w-64 bg-white border-r">
+    <div class="h-20 flex items-center px-6 border-b">
+      <i class="fas fa-bars text-2xl"></i>
+    </div>
+
+    <nav class="p-4 space-y-2">
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-blue-50 text-blue-600 font-medium">
+        <i class="fas fa-house"></i> Trang chủ
+      </a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100"><i class="fas fa-users"></i> Thành viên</a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100"><i class="fas fa-sitemap"></i> Cây gia phả</a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100"><i class="fas fa-link"></i> Quan hệ</a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100"><i class="fas fa-chart-column"></i> Thống kê</a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100"><i class="fas fa-file"></i> Tài liệu</a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100"><i class="fas fa-gear"></i> Cài đặt</a>
+    </nav>
+  </aside>
+
+  <main class="flex-1 flex flex-col">
+    <header class="h-20 bg-white border-b flex items-center justify-between px-8">
+      <h1 class="text-3xl font-bold">GIA PHẢ HỌ NGUYỄN</h1>
+
+      <div class="flex items-center gap-5">
+        <div class="relative">
+          <i class="fas fa-search absolute left-4 top-4 text-gray-400"></i>
+          <input class="w-80 pl-11 py-3 rounded-full bg-slate-100" placeholder="Tìm kiếm thành viên...">
+        </div>
+        <i class="far fa-bell text-xl"></i>
+        <div class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+          <span>Admin</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="p-6 flex-1 overflow-auto">
+      <div class="bg-white rounded-2xl border p-6 min-h-full">
+
+        <div class="flex justify-between mb-8">
+          <div class="flex gap-3">
+            <button class="w-12 h-12 border rounded-xl"><i class="fas fa-sliders"></i></button>
+            <button class="w-12 h-12 border rounded-xl"><i class="fas fa-search-plus"></i></button>
+            <button class="w-12 h-12 border rounded-xl"><i class="fas fa-search-minus"></i></button>
+            <button class="w-12 h-12 border rounded-xl"><i class="fas fa-expand"></i></button>
+          </div>
+
+          <div class="flex gap-4">
+            <select class="border rounded-xl px-4">
+              <option>Hiển thị: 3 thế hệ</option>
+            </select>
+            <select class="border rounded-xl px-4">
+              <option>Sắp xếp: Mặc định</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 border rounded-2xl h-[700px] relative p-10 overflow-auto">
+
+          <div class="flex justify-center gap-20">
+            <div class="bg-white shadow rounded-2xl w-64 p-4">
+              <h3 class="font-bold text-lg">Ông Nguyễn Văn A</h3>
+              <p>1930 - 2010</p>
+            </div>
+            <div class="bg-white shadow rounded-2xl w-64 p-4">
+              <h3 class="font-bold text-lg">Bà Trần Thị B</h3>
+              <p>1935 - 2012</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-24 gap-10">
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Văn C<br>1958</div>
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Thị D<br>1960</div>
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Văn E<br>1962</div>
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Thị F<br>1965</div>
+          </div>
+
+          <div class="flex justify-center mt-24 gap-10">
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Văn G<br>1985</div>
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Thị H<br>1987</div>
+            <div class="bg-white shadow rounded-2xl w-56 p-4">Nguyễn Văn I<br>1990</div>
+          </div>
+
+          <div class="absolute bottom-6 right-6 w-40 h-40 border rounded-xl bg-white flex items-center justify-center text-gray-400">
+            Mini Map
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
