@@ -63,7 +63,7 @@ async function fetchAndRenderTree(generation) {
   try {
     const response = await fetch(`${API}/api/family_tree?generation=${generation}`);
     const members = await response.json();
-    // Gom cac object tu database theo generationgeneration
+    // Gom cac object tu database theo generation
     const groupedByGen = {};
     members.forEach(member => {
       if (!groupedByGen[member.generation]) {
